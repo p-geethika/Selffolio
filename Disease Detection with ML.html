@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Disease Detection with ML</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+      <ul class="links">
+        <li class="active"><a href="index.html">Introduction</a></li>
+        <li><a href="generic.html">Education</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="elements.html">Achievements</a></li>
+
+      </ul>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/geethika-pula-a3b42a222/" class="fab fa-linkedin"><span
+              class="label"></span></a></li>
+        <li><a href="https://mail.google.com/mail/u/0/?tab=cm" class="fas fa-envelope-square"><span
+              class="label"></span></a></li>
+        <li><a href="https://github.com/p-geethika" class="fab fa-github"><span class="label"></span></a></li>
+      </ul>
+    </nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<section class="post">
+								<header class="major">
+									<h1>Disease Detection with ML</h1>
+								</header>
+
+								
+						<p>Now-a-days disease detection is very important, especially if early detection and treatment can bring the best results and save lots of lives. Machine learning has been used to improve medication from anesthesia to breast cancer treatment to daily medication. This blog aims to contribute to the development of technologies related to Machine Learning applied to medicine and explain its functioning as simply as possible</p>
+<p>Respiratory illnesses are the ones that affect the respiratory system, which is responsible for the production of oxygen to feed the whole body. These illnesses are produced by infections, tobacco, smoke inhalation, and exposure to substances such as redon, asbestos… To this group of illnesses belongs illnesses such as asthma, pneumonia, tuberculosis, and Covid-19.</p>
+<p> The first big epidemic belonging to this group of illnesses was the one produced by tuberculosis that affected the lungs. This epidemic was caused by the unacceptable labor conditions of the Industrial Revolution. This health problem was known lots of centuries before but was in that moment when it was first considered a huge health problem that provoked plenty of deaths and remarkable losses. </p>
+<p> The approach followed in detecting a disease using ML is of 4 steps </p>
+<ul>
+	<li>Gathering the Data</li>
+	<li>Cleaning the Data:</li>
+	<li>Model Building</li>
+	<li>Inference</li>
+</ul>
+<p>So, if we talk about Gathering data, it is the primary step for any machine learning problem. We will be using a dataset from Kaggle for this problem. This dataset consists of two CSV files one for training and one for testing. There is a total of 133 columns in the dataset out of which 132 columns represent the symptoms and the last column is the prognosis.</p>
+<p>In cleaning the data, the quality of our data determines the quality of our machine learning model. So it is always necessary to clean the data before feeding it to the model for training. In our dataset all the columns are numerical, the target column i.e. prognosis is a string type and is encoded to numerical form using a label encoder. </p>
+<p>After gathering and cleaning the data, the data is ready and can be used to train a machine learning model. We will be using this cleaned data to train the Support Vector Classifier, Naive Bayes Classifier, and Random Forest Classifier. We will be using a confusion matrix to determine the quality of the models.</p>
+<p>After training the three models we will be predicting the disease for the input symptoms by combining the predictions of all three models. This makes our overall prediction more robust and accurate.</p>
+<p>At last, we will be defining a function that takes symptoms separated by commas as input, predicts the disease based on the symptoms by using the trained models, and returns the predictions in a JSON format.</p>
+
+<p>WORKFLOW FOR IMPLEMENTATION<br>
+Make sure that the Training and Testing are downloaded and the train.csv, test.csv are put in the dataset folder. Open jupyter notebook and run the code individually for better understanding.<br>
+1. Firstly we will be loading the dataset from the folders using the pandas library. While reading the dataset we will be dropping the null column. This dataset is a clean dataset with no null values and all the features consist of 0’s and 1’s. Whenever we are solving a classification task it is necessary to check whether our target column is balanced or not. We will be using a bar plot, to check whether the dataset is balanced or not. <br>
+2.	Now that we have cleaned our data by removing the Null values and converting the labels to numerical format, It’s time to split the data to train and test the model. We will be splitting the data into 80:20 format i.e. 80% of the dataset will be used for training the model and 20% of the data will be used to evaluate the performance of the models.<br>
+3.	After splitting the data, we will be now working on the modeling part. We will be using K-Fold cross-validation to evaluate the machine learning models. We will be using Support Vector Classifier, Gaussian Naive Bayes Classifier, and Random Forest Classifier for cross-validation.<br>
+4.	This approach will help us to keep the predictions much more accurate on completely unseen data. In the below code we will be training all the three models on the train data, checking the quality of our models using a confusion matrix, and then combine the predictions of all the three models.
+ 
+<q> <b>“Predicting the future isn't a magic, Its Artificial Intelligence"</b></q><br>
+<br>
+Reference:<br><b>
+	<ul>
+<li><a href="https://www.hindawi.com/journals/jhe/2021/9983652/">Early Detection of disease</a><br></li>
+<li><a href="https://www.mdpi.com/564656">Plant Disease Detection</a><br></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3492865?casa_token=AjlP2g5dUdkAAAAA:siDNxALMJYZwbtsT0WeuDCjnc9ccn2GJ8X1V2_C-2pnVTZRQ9tGEx-1GRyIbGKwHOHXFJCaMH6nt2w">Acm Comprehensive review</a><br></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9020906/#:~:text=Machine%20learning%20obtains%20certain%20data,to%20medical%20diagnosticians%20%5B13%5D.">Nih.gov article</a><br></li>
+<li><a href="https://www.ijraset.com/research-paper/multiple-disease-detection-using-machine-learning">IJRASET research paper</a><br></b></li>
+</ul>
+
+
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

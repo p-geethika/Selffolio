@@ -1,0 +1,453 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Achievements</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style type="text/css">
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #ffffff;
+		}
+
+		.timeline {
+			position: relative;
+			width: 100%;
+			max-width: 1140px;
+			margin: 0 auto;
+			padding: 15px 0;
+		}
+
+		.timeline::after {
+			content: '';
+			position: absolute;
+			width: 2px;
+			background: #006E51;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -1px;
+		}
+
+		.container {
+			padding: 15px 30px;
+			position: relative;
+			background: inherit;
+			width: 50%;
+		}
+
+		.container.left {
+			left: 0;
+		}
+
+		.container.right {
+			left: 50%;
+		}
+
+		.container::after {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			top: calc(50% - 8px);
+			right: -8px;
+			background: #ffffff;
+			border: 2px solid #006E51;
+			border-radius: 16px;
+			z-index: 1;
+		}
+
+		.container.right::after {
+			left: -8px;
+		}
+
+		.container::before {
+			content: '';
+			position: absolute;
+			width: 50px;
+			height: 2px;
+			top: calc(50% - 1px);
+			right: 8px;
+			background: #006E51;
+			z-index: 1;
+		}
+
+		.container.right::before {
+			left: 8px;
+		}
+
+		.container .date {
+			position: absolute;
+			display: inline-block;
+			top: calc(50% - 8px);
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			color: #006E51;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			z-index: 1;
+		}
+
+		.container.left .date {
+			right: -90px;
+		}
+
+		.container.right .date {
+			left: -90px;
+		}
+
+		.container .icon {
+			position: absolute;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			padding: 9px 0;
+			top: calc(50% - 20px);
+			background: #F6D155;
+			border: 2px solid #006E51;
+			border-radius: 40px;
+			text-align: center;
+			font-size: 18px;
+			color: #006E51;
+			z-index: 1;
+		}
+
+		.container.left .icon {
+			right: 56px;
+		}
+
+		.container.right .icon {
+			left: 56px;
+		}
+
+		.container .content {
+			padding: 30px 90px 30px 30px;
+			background: #F6D155;
+			position: relative;
+			border-radius: 0 500px 500px 0;
+		}
+
+		.container.right .content {
+			padding: 30px 30px 30px 90px;
+			border-radius: 500px 0 0 500px;
+		}
+
+		.container .content h2 {
+			margin: 0 0 10px 0;
+
+			font-weight: normal;
+			color: #006E51;
+		}
+
+		.container .content p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 22px;
+			color: #000000;
+		}
+
+		@media (max-width: 767.98px) {
+			.timeline::after {
+				left: 90px;
+			}
+
+			.container {
+				width: 100%;
+				padding-left: 120px;
+				padding-right: 30px;
+			}
+
+			.container.right {
+				left: 0%;
+			}
+
+			.container.left::after,
+			.container.right::after {
+				left: 82px;
+			}
+
+			.container.left::before,
+			.container.right::before {
+				left: 100px;
+				border-color: transparent #006E51 transparent transparent;
+			}
+
+			.container.left .date,
+			.container.right .date {
+				right: auto;
+				left: 15px;
+			}
+
+			.container.left .icon,
+			.container.right .icon {
+				right: auto;
+				left: 146px;
+			}
+
+			.container.left .content,
+			.container.right .content {
+				padding: 30px 30px 30px 90px;
+				border-radius: 500px 0 0 500px;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Achievements</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Introduction</a></li>
+				<li><a href="generic.html">Education</a></li>
+				<li><a href="project.html">Projects</a></li>
+				<li><a href="elements.html">Achievements</a></li>
+
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/geethika-pula-a3b42a222/" class="fab fa-linkedin"><span
+							class="label"></span></a></li>
+				<li><a href="https://mail.google.com/mail/u/0/?tab=cm" class="fas fa-envelope-square"><span
+							class="label"></span></a></li>
+				<li><a href="https://github.com/p-geethika" class="fab fa-github"><span class="label"></span></a></li>
+			</ul>
+		</nav>
+		<div id="main">
+			<center style="opacity:0.9;">Note: To check the Certificate click on the icon</center>
+			<section class="post">
+				<header class="major">
+					<center>
+						<h1>Internship(LOR'S)</h1>
+					</center>
+				</header>
+
+				<div class="row">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1zFailUSlKm4jn4VD9nqS-EQTKRU-DaLJ/view?usp=sharing"
+							download>
+							<img src="images/ca.jpeg" alt="Java" height="200px" width="150px">
+						</a>
+						<p>Intership-Campus Ambassador<br>
+							Source : Techkriti IIT Kanpur
+						</p>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1xRGGcimrVG0mZ_sz50zeEgPZr9uIpR1C/view?usp=sharing"
+							download>
+							<img src="images/drones.jpeg" alt="Java" height="200px" width="150px">
+						</a>
+						<p>Intership-3D Printing of Drones <br>
+							Source : Amrita Vishwa Vidyapeetham
+						</p>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1l38bgX83Q_We6u6blRwxw0AArVn3n_In/view?usp=sharing"
+							download>
+							<img src="images/p.png" alt="Java" height="200px" width="150px">
+						</a>
+						<p>Internship - Ninja Entrepreneur <br>
+							Source : Coding ninjas
+						</p>
+					</div>
+					</div>
+					
+					<section class="post">
+						<header class="major">
+
+							<h1>Achievements</h1>
+						</header>
+
+						<div class="row">
+							<div class="column">
+								<a href="https://drive.google.com/file/d/1HHT8t7RHU0OwXF_cIQF5VfMoSrquXtlb/view?usp=sharing" download>
+									<img src="images/sdh.jpg" alt="Java" height="100px" width="150px">
+								</a>
+								<p>Runner up and Special Appreciation <br>
+									Source : Smart Digital Hackathon
+								</p>
+							</div>
+							<div class="column">
+								<a href="https://drive.google.com/file/d/171IJzW9tanlavbOtThjweayYa46cCMQ9/view?usp=share_link" download>
+									<img src="images/pho.jpeg"  alt="Java" height="100px" width="150px">
+								</a>
+								<p>Winner-Ideathon <br>
+									Source : Phobos- Amrita
+								</p>
+							</div>
+							
+							<div class="column">
+								<a href="https://drive.google.com/file/d/1Nq9KFBcWZ4A23EBWDiOtJWnJo5MQet1Y/view?usp=share_link" download>
+									<img src="images/Hac.png" alt="Java" height="100px" width="150px">
+								</a>
+								<p>4 Successful Merges <br>
+									Source :Hacktoberfest '22'
+								</p>
+							</div>
+						</div>
+
+						<section class="post">
+							<header class="major">
+								<h1>Courses</h1>
+							</header>
+
+
+							<div class="row">
+								<div class="column">
+									<a href="images/Internet.jpg" download>
+										<img src="images/Internet.jpg" alt="Java" height="100px" width="100px"
+											class="certif">
+									</a>
+									<p>Working of Internet <br>
+										Source : Udemy
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://drive.google.com/file/d/1Dn4iMzn82PmKip9z6LNLoixrwp7EgCjN/view?usp=share_link" download>
+										<img src="images/ML.jpeg" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Machine Learning<br>
+										Source : Simplilearn
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://drive.google.com/file/d/1UQkyNQndNSeRwow5_mh8TFs5ViRg_0nC/view?usp=sharing" download>
+										<img src="images/py.png" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Python Learning<br>
+										Source : Kaggle
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://drive.google.com/file/d/1zdIKb7veD_QOfpxvv0-grO5dZ6ejjiN2/view?usp=share_link" download>
+										<img src="images/ds.jpeg" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Data Science<br>
+										Source : Cognitive class
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://drive.google.com/file/d/1zK0C7qlDLQu2xOvnEQVYd0hY_-vM-3pA/view?usp=sharing" download>
+										<img src="images/java.png" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Java programming<br>
+										Source : Great learning
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://drive.google.com/file/d/1RM4v6RBteJtVROkwACVt1T4aWV78rkxK/view?usp=sharing" download>
+										<img src="images/ui.jpeg" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>UI/UX course<br>
+										Source : Udemy
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://www.credly.com/badges/f029b949-ed97-48e5-b5dd-50bf6c44e03d/public_url" download>
+										<img src="images/dl.jpeg" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Deep learning essentials<br>
+										Source : IBM
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://learn.microsoft.com/en-in/training/achievements/learn.az-900-describe-cloud-concepts.trophy?username=PulaGeethikaNaidu-2422" download>
+										<img src="images/azure.png" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Microsoft Azure fundamentals<br>
+										Source : Microsoft
+									</p>
+								</div>
+								<div class="column">
+									<a href="https://www.cloudskillsboost.google/public_profiles/2894bf02-cd6e-4a61-a405-34b57c69b5ed" download>
+										<img src="images/GC.png" alt="Ml" height="100px" width="100px">
+									</a>
+									<p>Google Cloud courses<br>
+										Source : Google
+									</p>
+								</div>
+							</div>
+							<section class="post">
+								<header class="major">
+									<h1>Events Participated</h1>
+								</header>
+
+								<div class="row">
+									<div class="column">
+										<a href="https://www.holopin.io/@pgeethika123" download>
+											<img src="images/hc.jpeg" alt="Java" height="100px" width="125px">
+										</a>
+										<p>Hacktoberfest'22 <br>
+											Source : Devfolio
+										</p>
+									</div>
+
+									<div class="column">
+										<a href="images/nw.jpg" download>
+											<img src="images/ind.jpeg" alt="Ml" height="100px" width="125px">
+										</a>
+										<p>Industry 4.0 revolution workshop <br>
+											Source :Nxt wave
+										</p>
+									</div>
+									<div>
+										<a href="https://drive.google.com/file/d/1MZuTaHEZJ5Sfehao3SBWrELoAKDdHv1l/view?usp=sharing" download>
+											<img src="images/zuno.png" alt="Ml" height="100px" width="125px">
+										</a>
+										<p>Zuno fellowship<br>
+											Source : Zuno<br>
+										</p>
+									</div>
+									<div>
+										<a href="https://codekaro.in/workshop-certificate/587d66fae2d1bf27" download>
+											<img src="images/web.jpeg" alt="Ml" height="100px" width="125px">
+										</a>
+										<p>Web development<br>
+											Bootcamp<br>
+											Source : Codekaro <br>
+
+										</p>
+									</div>
+									
+								</div>
+
+
+								<section class="post">
+									<header class="major">
+
+
+									</div>
+
+									<script src="assets/js/jquery.min.js"></script>
+									<script src="assets/js/jquery.scrollex.min.js"></script>
+									<script src="assets/js/jquery.scrolly.min.js"></script>
+									<script src="assets/js/browser.min.js"></script>
+									<script src="assets/js/breakpoints.min.js"></script>
+									<script src="assets/js/util.js"></script>
+									<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
